@@ -1,35 +1,56 @@
-# frontend-auth-login
+# Frontend - Vue 3^ + TailwindCSS
 
-This template should help get you started developing with Vue 3 in Vite.
+Este repositório contém o frontend de um sistema utilizando **Vue 3**, **TailwindCSS** e autenticação.
 
-## Recommended IDE Setup
+## 📌 Tecnologias Utilizadas
+- Vue 3 (Composition API)
+- Vue Router
+- Pinia (gerenciamento de estado)
+- TailwindCSS
+- Axios (para comunicação com API)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Como Rodar o Projeto
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
+### 1️⃣ Clonar o repositório
 ```sh
-yarn
+git clone https://github.com/RobsonPMartins/Vue-Frontend-AuthAPI.git
+cd seu-repositorio
 ```
 
-### Compile and Hot-Reload for Development
-
+### 2️⃣ Instalar dependências
 ```sh
-yarn dev
+npm install
 ```
 
-### Compile and Minify for Production
-
-```sh
-yarn build
+### 3️⃣ Configurar variáveis de ambiente
+Crie um arquivo **.env** na raiz do projeto e adicione:
+```env
+VITE_API_URL=http://localhost:3000/api
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
+### 4️⃣ Iniciar o projeto
 ```sh
-yarn lint
+npm run dev
 ```
+
+## 📡 Funcionalidades
+- 📌 **Autenticação**: Tela de login e cadastro
+- 📊 **Dashboard**: Exibição de métricas e pedidos
+- 🌐 **Consumo de API**: Integração com backend via Axios
+
+## 📜 Estrutura de Pastas
+```
+📂 src
+ ├── 📂 components        # Componentes reutilizáveis
+ ├── 📂 views             # Telas principais
+ ├── 📂 router            # Configuração de rotas
+ ├── 📂 services          # Requisições HTTP (Axios)
+```
+
+## 🛠 Scripts Disponíveis
+- `npm run dev` → Inicia o frontend em modo de desenvolvimento
+- `npm run build` → Gera a versão de produção
+
+## 📜 Licença
+Este projeto está sob a licença MIT.
+
